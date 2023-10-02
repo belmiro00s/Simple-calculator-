@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="calcu.css" />
+</head>
+
+<body>
+  <div class="fundo">
+    <h1>Guilherme Belmiro</h1>
+    <div class="Calculadora">
+      <h1 class="titulo">Calculadora</h1>
+      <p id="resultado"></p>
+      <table>
+        <tr>
+          <!-- Start a table row -->
+          <td><button class="botao" onclick="clean()">C</button></td>
+          <!-- Define the first table -->
+          <td><button class="botao" onclick="backspace()" ><</button>
+          </td>
+          <td><button class="botao">/</button></td>
+          <td><button class="botao">X</button></td>
+        </tr>
+        <tr>
+          <!-- Start a table row -->
+          <td><button class="botao" onclick="insert('7')">7</button></td>
+          <!-- Define the first table -->
+          <td><button class="botao" onclick="insert('8')">8</button></td>
+          <td><button class="botao" onclick="insert('9')">9</button></td>
+          <td><button class="botao">-</button></td>
+        </tr>
+        <tr>
+          <!-- Start a table row -->
+          <td><button class="botao" onclick="insert('4')">4</button></td>
+          <!-- Define the first table -->
+          <td><button class="botao" onclick="insert('5')">5</button></td>
+          <td><button class="botao" onclick="insert('6')">6</button></td>
+          <td><button class="botao">+</button></td>
+        </tr>
+        <tr>
+          <!-- Start a table row -->
+          <td><button class="botao" onclick="insert('1')">1</button></td>
+          <!-- Define the first table -->
+          <td><button class="botao" onclick="insert('2')">2</button></td>
+          <td><button class="botao" onclick="insert('3')">3</button></td>
+          <td rowspan="2"><button class="botao" style="height: 106px;">=</button></td>
+          <!-- utilizando o row span para espandir a coluna para mais uma linha -->
+        </tr>
+        <tr>
+          <!-- Start a table row -->
+          <td colspan="2"><button class="botao" style="width: 106px;">0</button></td>
+          <!-- utilizando o row span para espandir a coluna para mais 2 linhas-->
+          <td><button class="botao">.</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="calcu.js" >
+  </script>
+</body>
+
+</html>
